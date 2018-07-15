@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a873087c-4776-4a3e-8ca9-624166b28f54" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Project4$RentalStoreGUI.ic" NAME="RentalStoreGUI Coverage Results" MODIFIED="1531612771549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Project4.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Dialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project4/Dialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2520">
+              <caret line="340" column="9" selection-start-line="340" selection-start-column="9" selection-end-line="340" selection-end-column="9" />
+              <folding>
+                <element signature="docComment;class#Dialog#0" />
+                <element signature="docComment;field#titleTxt#0;class#Dialog#0" />
+                <element signature="docComment;field#renterTxt#0;class#Dialog#0" />
+                <element signature="docComment;field#rentedOnTxt#0;class#Dialog#0" />
+                <element signature="docComment;field#DueBackTxt#0;class#Dialog#0" />
+                <element signature="docComment;field#okButton#0;class#Dialog#0" />
+                <element signature="docComment;field#cancelButton#0;class#Dialog#0" />
+                <element signature="docComment;field#closeStatus#0;class#Dialog#0" />
+                <element signature="docComment;field#DATE_FORMAT#0;class#Dialog#0" />
+                <element signature="docComment;field#icon#0;class#Dialog#0" />
+                <element signature="docComment;method#Dialog#0;class#Dialog#0" />
+                <element signature="method#Dialog#0;class#Dialog#0" />
+                <element signature="docComment;method#Dialog#1;class#Dialog#0" />
+                <element signature="method#Dialog#1;class#Dialog#0" />
+                <element signature="docComment;method#checkDateRented#0;class#Dialog#0" />
+                <element signature="method#checkDateRented#0;class#Dialog#0" />
+                <element signature="docComment;method#checkDateDue#0;class#Dialog#0" />
+                <element signature="docComment;method#closeOK#0;class#Dialog#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DVD.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project4/DVD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="128" selection-start-line="128" selection-end-line="128" />
+              <folding>
+                <element signature="docComment;class#DVD#0" />
+                <element signature="docComment;field#serialVersionUID#0;class#DVD#0" />
+                <element signature="docComment;field#DATE_FORMAT#0;class#DVD#0" />
+                <element signature="docComment;field#bought#0;class#DVD#0" />
+                <element signature="docComment;field#dueBack#0;class#DVD#0" />
+                <element signature="docComment;field#title#0;class#DVD#0" />
+                <element signature="docComment;field#nameOfRenter#0;class#DVD#0" />
+                <element signature="docComment;field#DVD_RENT_FEE#0;class#DVD#0" />
+                <element signature="docComment;field#DVD_LATE_FEE#0;class#DVD#0" />
+                <element signature="docComment;method#DVD#0;class#DVD#0" />
+                <element signature="method#DVD#0;class#DVD#0" />
+                <element signature="docComment;method#DVD#1;class#DVD#0" />
+                <element signature="method#DVD#1;class#DVD#0" />
+                <element signature="docComment;method#getBought#0;class#DVD#0" />
+                <element signature="docComment;method#setBought#0;class#DVD#0" />
+                <element signature="docComment;method#getDueBack#0;class#DVD#0" />
+                <element signature="e#3244#3245#0" expanded="true" />
+                <element signature="e#3274#3275#0" expanded="true" />
+                <element signature="docComment;method#setDueBack#0;class#DVD#0" />
+                <element signature="docComment;method#getTitle#0;class#DVD#0" />
+                <element signature="docComment;method#setTitle#0;class#DVD#0" />
+                <element signature="docComment;method#getNameOfRenter#0;class#DVD#0" />
+                <element signature="e#4597#4598#0" expanded="true" />
+                <element signature="docComment;method#setNameOfRenter#0;class#DVD#0" />
+                <element signature="docComment;method#getCost#0;class#DVD#0" />
+                <element signature="method#getCost#0;class#DVD#0" />
+                <element signature="docComment;method#checkReturnDate#0;class#DVD#0" />
+                <element signature="docComment;method#DelLeadWhiteSpace#0;class#DVD#0" />
+                <element signature="method#DelLeadWhiteSpace#0;class#DVD#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project4/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
+              <folding>
+                <element signature="docComment;class#Game#0" />
+                <element signature="docComment;field#player#0;class#Game#0" />
+                <element signature="docComment;field#GAME_RENT_FEE#0;class#Game#0" />
+                <element signature="docComment;field#GAME_LATE_FEE#0;class#Game#0" />
+                <element signature="docComment;method#Game#0;class#Game#0" />
+                <element signature="docComment;method#Game#1;class#Game#0" />
+                <element signature="method#Game#1;class#Game#0" />
+                <element signature="docComment;method#getPlayer#0;class#Game#0" />
+                <element signature="docComment;method#setPlayer#0;class#Game#0" />
+                <element signature="docComment;method#getCost#0;class#Game#0" />
+                <element signature="method#getCost#0;class#Game#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myDoublelyLinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project4/myDoublelyLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="200" selection-start-line="200" selection-end-line="200" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RentalStore.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project4/RentalStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+              <folding>
+                <element signature="docComment;class#RentalStore#0" />
+                <element signature="method#RentalStore#0;class#RentalStore#0" />
+                <element signature="method#add#0;class#RentalStore#0" />
+                <element signature="method#addSpecial#0;class#RentalStore#0" />
+                <element signature="method#remove#0;class#RentalStore#0" />
+                <element signature="method#specialRemove#0;class#RentalStore#0" />
+                <element signature="method#getSize#0;class#RentalStore#0" />
+                <element signature="method#linePrinter#0;class#RentalStore#0" />
+                <element signature="method#saveAsSerializable#0;class#RentalStore#0" />
+                <element signature="method#loadFromSerializable#0;class#RentalStore#0" />
+                <element signature="method#saveAsText#0;class#RentalStore#0" />
+                <element signature="method#findLate#0;class#RentalStore#0" />
+                <element signature="e#7907#7908#0" expanded="true" />
+                <element signature="e#7947#7948#0" expanded="true" />
+                <element signature="method#checkWhiteSpace#0;class#RentalStore#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RentalStoreGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project4/RentalStoreGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1663">
+              <caret line="175" column="5" lean-forward="true" selection-start-line="175" selection-start-column="5" selection-end-line="175" selection-end-column="5" />
+              <folding>
+                <element signature="docComment;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#menus#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#fileMenu#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#actionMenu#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#undo#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#openSerItem#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#exitItem#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#saveSerItem#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#openTextItem#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#saveTextItem#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#rentDVD#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#rentGame#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#returnItem#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#findLateItem#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#list#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#scrollList#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;field#icon#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;method#RentalStoreGUI#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;method#actionPerformed#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;method#lateUnits#0;class#RentalStoreGUI#0" />
+                <element signature="method#lateUnits#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;method#returnUnit#0;class#RentalStoreGUI#0" />
+                <element signature="method#returnUnit#0;class#RentalStoreGUI#0" />
+                <element signature="docComment;method#main#0;class#RentalStoreGUI#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Project4/Dialog.java" />
+        <option value="$PROJECT_DIR$/src/Project4/RentDVDDialog.java" />
+        <option value="$PROJECT_DIR$/src/Project4/Game.java" />
+        <option value="$PROJECT_DIR$/src/Project4/PlayerType.java" />
+        <option value="$PROJECT_DIR$/src/Project4/RentGameDialog.java" />
+        <option value="$PROJECT_DIR$/src/Project4/myDoubleyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/Project4/myDoublelyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/Project4/DNode.java" />
+        <option value="$PROJECT_DIR$/src/Project4/TableTesting.java" />
+        <option value="$PROJECT_DIR$/src/Project4/DVD.java" />
+        <option value="$PROJECT_DIR$/src/Project4/RentalStoreGUI.java" />
+        <option value="$PROJECT_DIR$/src/Project4/RentalStore.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Project4" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="RentalStoreGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Project4.RentalStoreGUI" />
+      <module name="Project4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Project4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RentalStoreGUI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a873087c-4776-4a3e-8ca9-624166b28f54" name="Default" comment="" />
+      <created>1530582674251</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530582674251</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32965517" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32965517" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20827587" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11308562" />
+      <window_info id="Learn" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.16137931" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32956383" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Project4/RentalStoreGUI.java</url>
+          <line>443</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Project4/Dialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="340" column="9" selection-start-line="340" selection-start-column="9" selection-end-line="340" selection-end-column="9" />
+          <folding>
+            <element signature="docComment;class#Dialog#0" />
+            <element signature="docComment;field#titleTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#renterTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#rentedOnTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#DueBackTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#okButton#0;class#Dialog#0" />
+            <element signature="docComment;field#cancelButton#0;class#Dialog#0" />
+            <element signature="docComment;field#closeStatus#0;class#Dialog#0" />
+            <element signature="docComment;field#DATE_FORMAT#0;class#Dialog#0" />
+            <element signature="docComment;field#icon#0;class#Dialog#0" />
+            <element signature="docComment;method#Dialog#0;class#Dialog#0" />
+            <element signature="method#Dialog#0;class#Dialog#0" />
+            <element signature="docComment;method#Dialog#1;class#Dialog#0" />
+            <element signature="method#Dialog#1;class#Dialog#0" />
+            <element signature="docComment;method#checkDateRented#0;class#Dialog#0" />
+            <element signature="method#checkDateRented#0;class#Dialog#0" />
+            <element signature="docComment;method#checkDateDue#0;class#Dialog#0" />
+            <element signature="docComment;method#closeOK#0;class#Dialog#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/DVD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+          <folding>
+            <element signature="docComment;class#DVD#0" />
+            <element signature="docComment;field#serialVersionUID#0;class#DVD#0" />
+            <element signature="docComment;field#DATE_FORMAT#0;class#DVD#0" />
+            <element signature="docComment;field#bought#0;class#DVD#0" />
+            <element signature="docComment;field#dueBack#0;class#DVD#0" />
+            <element signature="docComment;field#title#0;class#DVD#0" />
+            <element signature="docComment;field#nameOfRenter#0;class#DVD#0" />
+            <element signature="docComment;field#DVD_RENT_FEE#0;class#DVD#0" />
+            <element signature="docComment;field#DVD_LATE_FEE#0;class#DVD#0" />
+            <element signature="docComment;method#DVD#0;class#DVD#0" />
+            <element signature="method#DVD#0;class#DVD#0" />
+            <element signature="docComment;method#DVD#1;class#DVD#0" />
+            <element signature="method#DVD#1;class#DVD#0" />
+            <element signature="docComment;method#getBought#0;class#DVD#0" />
+            <element signature="docComment;method#setBought#0;class#DVD#0" />
+            <element signature="docComment;method#getDueBack#0;class#DVD#0" />
+            <element signature="e#3244#3245#0" expanded="true" />
+            <element signature="e#3274#3275#0" expanded="true" />
+            <element signature="docComment;method#setDueBack#0;class#DVD#0" />
+            <element signature="docComment;method#getTitle#0;class#DVD#0" />
+            <element signature="docComment;method#setTitle#0;class#DVD#0" />
+            <element signature="docComment;method#getNameOfRenter#0;class#DVD#0" />
+            <element signature="e#4597#4598#0" expanded="true" />
+            <element signature="docComment;method#setNameOfRenter#0;class#DVD#0" />
+            <element signature="docComment;method#getCost#0;class#DVD#0" />
+            <element signature="method#getCost#0;class#DVD#0" />
+            <element signature="docComment;method#checkReturnDate#0;class#DVD#0" />
+            <element signature="docComment;method#DelLeadWhiteSpace#0;class#DVD#0" />
+            <element signature="method#DelLeadWhiteSpace#0;class#DVD#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="docComment;class#Game#0" />
+            <element signature="docComment;field#player#0;class#Game#0" />
+            <element signature="docComment;field#GAME_RENT_FEE#0;class#Game#0" />
+            <element signature="docComment;field#GAME_LATE_FEE#0;class#Game#0" />
+            <element signature="docComment;method#Game#0;class#Game#0" />
+            <element signature="docComment;method#Game#1;class#Game#0" />
+            <element signature="method#Game#1;class#Game#0" />
+            <element signature="docComment;method#getPlayer#0;class#Game#0" />
+            <element signature="docComment;method#setPlayer#0;class#Game#0" />
+            <element signature="docComment;method#getCost#0;class#Game#0" />
+            <element signature="method#getCost#0;class#Game#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/myDoublelyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3000">
+          <caret line="200" selection-start-line="200" selection-end-line="200" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/RentalStoreGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2055">
+          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+          <folding>
+            <element signature="docComment;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#menus#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#fileMenu#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#actionMenu#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#undo#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#openSerItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#exitItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#saveSerItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#openTextItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#saveTextItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#rentDVD#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#rentGame#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#returnItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#findLateItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#list#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#scrollList#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#icon#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#RentalStoreGUI#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#actionPerformed#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#lateUnits#0;class#RentalStoreGUI#0" />
+            <element signature="method#lateUnits#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#returnUnit#0;class#RentalStoreGUI#0" />
+            <element signature="method#returnUnit#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#main#0;class#RentalStoreGUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/RentalStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <folding>
+            <element signature="docComment;class#RentalStore#0" />
+            <element signature="method#RentalStore#0;class#RentalStore#0" />
+            <element signature="method#add#0;class#RentalStore#0" />
+            <element signature="method#addSpecial#0;class#RentalStore#0" />
+            <element signature="method#remove#0;class#RentalStore#0" />
+            <element signature="method#specialRemove#0;class#RentalStore#0" />
+            <element signature="method#getSize#0;class#RentalStore#0" />
+            <element signature="method#linePrinter#0;class#RentalStore#0" />
+            <element signature="method#saveAsSerializable#0;class#RentalStore#0" />
+            <element signature="method#loadFromSerializable#0;class#RentalStore#0" />
+            <element signature="method#saveAsText#0;class#RentalStore#0" />
+            <element signature="method#findLate#0;class#RentalStore#0" />
+            <element signature="e#7907#7908#0" expanded="true" />
+            <element signature="e#7947#7948#0" expanded="true" />
+            <element signature="method#checkWhiteSpace#0;class#RentalStore#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/Dialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="docComment;class#Dialog#0" />
+            <element signature="docComment;field#titleTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#renterTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#rentedOnTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#DueBackTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#okButton#0;class#Dialog#0" />
+            <element signature="docComment;field#cancelButton#0;class#Dialog#0" />
+            <element signature="docComment;field#closeStatus#0;class#Dialog#0" />
+            <element signature="docComment;field#DATE_FORMAT#0;class#Dialog#0" />
+            <element signature="docComment;field#icon#0;class#Dialog#0" />
+            <element signature="docComment;method#Dialog#0;class#Dialog#0" />
+            <element signature="method#Dialog#0;class#Dialog#0" />
+            <element signature="docComment;method#Dialog#1;class#Dialog#0" />
+            <element signature="method#Dialog#1;class#Dialog#0" />
+            <element signature="docComment;method#checkDateRented#0;class#Dialog#0" />
+            <element signature="method#checkDateRented#0;class#Dialog#0" />
+            <element signature="docComment;method#checkDateDue#0;class#Dialog#0" />
+            <element signature="docComment;method#closeOK#0;class#Dialog#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/RentDVDDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3975">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+          <folding>
+            <element signature="docComment;class#RentDVDDialog#0" />
+            <element signature="docComment;field#unit#0;class#RentDVDDialog#0" />
+            <element signature="docComment;method#RentDVDDialog#0;class#RentDVDDialog#0" />
+            <element signature="method#RentDVDDialog#0;class#RentDVDDialog#0" />
+            <element signature="docComment;method#actionPerformed#0;class#RentDVDDialog#0" />
+            <element signature="docComment;method#inputCheck#0;class#RentDVDDialog#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/DVD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="docComment;class#DVD#0" />
+            <element signature="docComment;field#serialVersionUID#0;class#DVD#0" />
+            <element signature="docComment;field#DATE_FORMAT#0;class#DVD#0" />
+            <element signature="docComment;field#bought#0;class#DVD#0" />
+            <element signature="docComment;field#dueBack#0;class#DVD#0" />
+            <element signature="docComment;field#title#0;class#DVD#0" />
+            <element signature="docComment;field#nameOfRenter#0;class#DVD#0" />
+            <element signature="docComment;field#DVD_RENT_FEE#0;class#DVD#0" />
+            <element signature="docComment;field#DVD_LATE_FEE#0;class#DVD#0" />
+            <element signature="docComment;method#DVD#0;class#DVD#0" />
+            <element signature="method#DVD#0;class#DVD#0" />
+            <element signature="docComment;method#DVD#1;class#DVD#0" />
+            <element signature="method#DVD#1;class#DVD#0" />
+            <element signature="docComment;method#getBought#0;class#DVD#0" />
+            <element signature="docComment;method#setBought#0;class#DVD#0" />
+            <element signature="docComment;method#getDueBack#0;class#DVD#0" />
+            <element signature="e#3244#3245#0" expanded="true" />
+            <element signature="e#3274#3275#0" expanded="true" />
+            <element signature="docComment;method#setDueBack#0;class#DVD#0" />
+            <element signature="docComment;method#getTitle#0;class#DVD#0" />
+            <element signature="docComment;method#setTitle#0;class#DVD#0" />
+            <element signature="docComment;method#getNameOfRenter#0;class#DVD#0" />
+            <element signature="e#4597#4598#0" expanded="true" />
+            <element signature="docComment;method#setNameOfRenter#0;class#DVD#0" />
+            <element signature="docComment;method#getCost#0;class#DVD#0" />
+            <element signature="method#getCost#0;class#DVD#0" />
+            <element signature="docComment;method#checkReturnDate#0;class#DVD#0" />
+            <element signature="docComment;method#DelLeadWhiteSpace#0;class#DVD#0" />
+            <element signature="method#DelLeadWhiteSpace#0;class#DVD#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="docComment;class#Game#0" />
+            <element signature="docComment;field#player#0;class#Game#0" />
+            <element signature="docComment;field#GAME_RENT_FEE#0;class#Game#0" />
+            <element signature="docComment;field#GAME_LATE_FEE#0;class#Game#0" />
+            <element signature="docComment;method#Game#0;class#Game#0" />
+            <element signature="docComment;method#Game#1;class#Game#0" />
+            <element signature="method#Game#1;class#Game#0" />
+            <element signature="docComment;method#getPlayer#0;class#Game#0" />
+            <element signature="docComment;method#setPlayer#0;class#Game#0" />
+            <element signature="docComment;method#getCost#0;class#Game#0" />
+            <element signature="method#getCost#0;class#Game#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/RentalStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="500" selection-start-line="500" selection-end-line="500" />
+          <folding>
+            <element signature="docComment;class#RentalStore#0" />
+            <element signature="method#RentalStore#0;class#RentalStore#0" />
+            <element signature="method#add#0;class#RentalStore#0" />
+            <element signature="method#addSpecial#0;class#RentalStore#0" />
+            <element signature="method#remove#0;class#RentalStore#0" />
+            <element signature="method#specialRemove#0;class#RentalStore#0" />
+            <element signature="method#getSize#0;class#RentalStore#0" />
+            <element signature="method#linePrinter#0;class#RentalStore#0" />
+            <element signature="method#saveAsSerializable#0;class#RentalStore#0" />
+            <element signature="method#loadFromSerializable#0;class#RentalStore#0" />
+            <element signature="method#saveAsText#0;class#RentalStore#0" />
+            <element signature="method#findLate#0;class#RentalStore#0" />
+            <element signature="e#7907#7908#0" expanded="true" />
+            <element signature="e#7947#7948#0" expanded="true" />
+            <element signature="method#checkWhiteSpace#0;class#RentalStore#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/PlayerType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/RentalStoreGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="480" selection-start-line="480" selection-end-line="480" />
+          <folding>
+            <element signature="docComment;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#menus#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#fileMenu#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#actionMenu#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#undo#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#openSerItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#exitItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#saveSerItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#openTextItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#saveTextItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#rentDVD#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#rentGame#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#returnItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#findLateItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#list#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#scrollList#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#icon#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#RentalStoreGUI#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#actionPerformed#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#lateUnits#0;class#RentalStoreGUI#0" />
+            <element signature="method#lateUnits#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#returnUnit#0;class#RentalStoreGUI#0" />
+            <element signature="method#returnUnit#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#main#0;class#RentalStoreGUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/RentGameDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3195">
+          <caret line="259" column="38" lean-forward="true" selection-start-line="259" selection-start-column="38" selection-end-line="259" selection-end-column="38" />
+          <folding>
+            <element signature="docComment;class#RentGameDialog#0" />
+            <element signature="docComment;method#actionPerformed#0;class#RentGameDialog#0" />
+            <element signature="method#actionPerformed#0;class#RentGameDialog#0" />
+            <element signature="docComment;method#inputCheck#0;class#RentGameDialog#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/PlayerType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/TableTesting.java" />
+    <entry file="file://$PROJECT_DIR$/src/Project4/RentGameDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="259" column="38" selection-start-line="259" selection-start-column="38" selection-end-line="259" selection-end-column="38" />
+          <folding>
+            <element signature="docComment;class#RentGameDialog#0" />
+            <element signature="docComment;method#actionPerformed#0;class#RentGameDialog#0" />
+            <element signature="method#actionPerformed#0;class#RentGameDialog#0" />
+            <element signature="docComment;method#inputCheck#0;class#RentGameDialog#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/RentDVDDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1374">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+          <folding>
+            <element signature="docComment;class#RentDVDDialog#0" />
+            <element signature="docComment;field#unit#0;class#RentDVDDialog#0" />
+            <element signature="docComment;method#RentDVDDialog#0;class#RentDVDDialog#0" />
+            <element signature="method#RentDVDDialog#0;class#RentDVDDialog#0" />
+            <element signature="docComment;method#actionPerformed#0;class#RentDVDDialog#0" />
+            <element signature="docComment;method#inputCheck#0;class#RentDVDDialog#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/DVD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+          <folding>
+            <element signature="docComment;class#DVD#0" />
+            <element signature="docComment;field#serialVersionUID#0;class#DVD#0" />
+            <element signature="docComment;field#DATE_FORMAT#0;class#DVD#0" />
+            <element signature="docComment;field#bought#0;class#DVD#0" />
+            <element signature="docComment;field#dueBack#0;class#DVD#0" />
+            <element signature="docComment;field#title#0;class#DVD#0" />
+            <element signature="docComment;field#nameOfRenter#0;class#DVD#0" />
+            <element signature="docComment;field#DVD_RENT_FEE#0;class#DVD#0" />
+            <element signature="docComment;field#DVD_LATE_FEE#0;class#DVD#0" />
+            <element signature="docComment;method#DVD#0;class#DVD#0" />
+            <element signature="method#DVD#0;class#DVD#0" />
+            <element signature="docComment;method#DVD#1;class#DVD#0" />
+            <element signature="method#DVD#1;class#DVD#0" />
+            <element signature="docComment;method#getBought#0;class#DVD#0" />
+            <element signature="docComment;method#setBought#0;class#DVD#0" />
+            <element signature="docComment;method#getDueBack#0;class#DVD#0" />
+            <element signature="e#3244#3245#0" expanded="true" />
+            <element signature="e#3274#3275#0" expanded="true" />
+            <element signature="docComment;method#setDueBack#0;class#DVD#0" />
+            <element signature="docComment;method#getTitle#0;class#DVD#0" />
+            <element signature="docComment;method#setTitle#0;class#DVD#0" />
+            <element signature="docComment;method#getNameOfRenter#0;class#DVD#0" />
+            <element signature="e#4597#4598#0" expanded="true" />
+            <element signature="docComment;method#setNameOfRenter#0;class#DVD#0" />
+            <element signature="docComment;method#getCost#0;class#DVD#0" />
+            <element signature="method#getCost#0;class#DVD#0" />
+            <element signature="docComment;method#checkReturnDate#0;class#DVD#0" />
+            <element signature="docComment;method#DelLeadWhiteSpace#0;class#DVD#0" />
+            <element signature="method#DelLeadWhiteSpace#0;class#DVD#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/Dialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="340" column="9" selection-start-line="340" selection-start-column="9" selection-end-line="340" selection-end-column="9" />
+          <folding>
+            <element signature="docComment;class#Dialog#0" />
+            <element signature="docComment;field#titleTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#renterTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#rentedOnTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#DueBackTxt#0;class#Dialog#0" />
+            <element signature="docComment;field#okButton#0;class#Dialog#0" />
+            <element signature="docComment;field#cancelButton#0;class#Dialog#0" />
+            <element signature="docComment;field#closeStatus#0;class#Dialog#0" />
+            <element signature="docComment;field#DATE_FORMAT#0;class#Dialog#0" />
+            <element signature="docComment;field#icon#0;class#Dialog#0" />
+            <element signature="docComment;method#Dialog#0;class#Dialog#0" />
+            <element signature="method#Dialog#0;class#Dialog#0" />
+            <element signature="docComment;method#Dialog#1;class#Dialog#0" />
+            <element signature="method#Dialog#1;class#Dialog#0" />
+            <element signature="docComment;method#checkDateRented#0;class#Dialog#0" />
+            <element signature="method#checkDateRented#0;class#Dialog#0" />
+            <element signature="docComment;method#checkDateDue#0;class#Dialog#0" />
+            <element signature="docComment;method#closeOK#0;class#Dialog#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/DNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="docComment;class#Game#0" />
+            <element signature="docComment;field#player#0;class#Game#0" />
+            <element signature="docComment;field#GAME_RENT_FEE#0;class#Game#0" />
+            <element signature="docComment;field#GAME_LATE_FEE#0;class#Game#0" />
+            <element signature="docComment;method#Game#0;class#Game#0" />
+            <element signature="docComment;method#Game#1;class#Game#0" />
+            <element signature="method#Game#1;class#Game#0" />
+            <element signature="docComment;method#getPlayer#0;class#Game#0" />
+            <element signature="docComment;method#setPlayer#0;class#Game#0" />
+            <element signature="docComment;method#getCost#0;class#Game#0" />
+            <element signature="method#getCost#0;class#Game#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/myDoublelyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="200" selection-start-line="200" selection-end-line="200" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/RentalStoreGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1663">
+          <caret line="175" column="5" lean-forward="true" selection-start-line="175" selection-start-column="5" selection-end-line="175" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#menus#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#fileMenu#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#actionMenu#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#undo#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#openSerItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#exitItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#saveSerItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#openTextItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#saveTextItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#rentDVD#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#rentGame#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#returnItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#findLateItem#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#list#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#scrollList#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;field#icon#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#RentalStoreGUI#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#actionPerformed#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#lateUnits#0;class#RentalStoreGUI#0" />
+            <element signature="method#lateUnits#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#returnUnit#0;class#RentalStoreGUI#0" />
+            <element signature="method#returnUnit#0;class#RentalStoreGUI#0" />
+            <element signature="docComment;method#main#0;class#RentalStoreGUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project4/RentalStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+          <folding>
+            <element signature="docComment;class#RentalStore#0" />
+            <element signature="method#RentalStore#0;class#RentalStore#0" />
+            <element signature="method#add#0;class#RentalStore#0" />
+            <element signature="method#addSpecial#0;class#RentalStore#0" />
+            <element signature="method#remove#0;class#RentalStore#0" />
+            <element signature="method#specialRemove#0;class#RentalStore#0" />
+            <element signature="method#getSize#0;class#RentalStore#0" />
+            <element signature="method#linePrinter#0;class#RentalStore#0" />
+            <element signature="method#saveAsSerializable#0;class#RentalStore#0" />
+            <element signature="method#loadFromSerializable#0;class#RentalStore#0" />
+            <element signature="method#saveAsText#0;class#RentalStore#0" />
+            <element signature="method#findLate#0;class#RentalStore#0" />
+            <element signature="e#7907#7908#0" expanded="true" />
+            <element signature="e#7947#7948#0" expanded="true" />
+            <element signature="method#checkWhiteSpace#0;class#RentalStore#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
