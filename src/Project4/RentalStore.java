@@ -16,29 +16,28 @@ import java.util.*;
  *****************************************************************/
 public class RentalStore extends AbstractTableModel {
 
-    private myDoublelyLinkedList<DVD> listDVDs;
+    private myDoubleLinkedList<DVD> listDVDs;
 
-    private myDoublelyLinkedList<String> addRemove;
-
-    private myDoublelyLinkedList<DVD> undoList;
+    private myDoubleLinkedList<DVD[]> undoList;//changed
 
     private SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("MM/dd/yyyy");
 
+    private String [] colNames = {"Names", "Title", "Rented On", "Due Date", "Console"};
+
     public RentalStore() {
         super();
-        listDVDs = new myDoublelyLinkedList<DVD>();
+        listDVDs = new myDoubleLinkedList<DVD>();
 
-        undoList = new myDoublelyLinkedList<DVD>();
-
-        addRemove = new myDoublelyLinkedList<String>();
+        undoList = new myDoubleLinkedList<DVD[]>();
 
     }
 
     public void add(DVD a) {
 
+        this.undoList.addLast(listDVDs.getArray(listDVDs));//changed
+
         this.listDVDs.addLast(a);
-        this.undoList.addLast(a);
-        addRemove.addLast("remove");
+
         fireTableRowsInserted(0, listDVDs.getSize());
 
     }
@@ -59,20 +58,13 @@ public class RentalStore extends AbstractTableModel {
 
     public void remove(int index, DVD unit) {
 
+        this.undoList.addLast(listDVDs.getArray(listDVDs));//changed
+
         this.listDVDs.remover(index);
-        this.undoList.addLast(unit);
-        addRemove.addLast("add");
-        fireTableRowsDeleted(0, listDVDs.getSize()+1);
-    }
 
-    public void specialRemove(DVD unit) {
-        listDVDs.remove(unit);
-        fireTableRowsDeleted(0, listDVDs.getSize()+1);
-    }
 
-    public int getSize() {
+        fireTableRowsDeleted(0, listDVDs.getSize());
 
-        return listDVDs.getSize();
     }
 
     private String linePrinter(int index) {
@@ -111,14 +103,14 @@ public class RentalStore extends AbstractTableModel {
 
     public void loadFromSerializable(String filename) {
 
-        undoList = new myDoublelyLinkedList<DVD>();
-        addRemove = new myDoublelyLinkedList<String>();
+        undoList = new myDoubleLinkedList<DVD[]>();//changed
+
 
         try {
             FileInputStream fis = new FileInputStream(filename);
             ObjectInputStream is = new ObjectInputStream(fis);
 
-            listDVDs = (myDoublelyLinkedList<DVD>) is.readObject();
+            listDVDs = (myDoubleLinkedList<DVD>) is.readObject();
 
             fireTableRowsInserted(0, listDVDs.getSize());
             is.close();
@@ -149,9 +141,9 @@ public class RentalStore extends AbstractTableModel {
     public void loadFromText(String filename) {
 
         Scanner fileReader;
-        listDVDs = new myDoublelyLinkedList<DVD>();
-        undoList = new myDoublelyLinkedList<DVD>();
-        addRemove = new myDoublelyLinkedList<String>();
+        listDVDs = new myDoubleLinkedList<DVD>();
+        undoList = new myDoubleLinkedList<DVD[]>();//changed
+
 
         String temp = null;
         String[] s;
@@ -244,25 +236,6 @@ public class RentalStore extends AbstractTableModel {
 
     }
 
-    public void undo() {
-        if (undoList.getSize() > 0) {
-            if (addRemove.get(addRemove.getSize() - 1).equals("remove")) {
-
-                specialRemove(undoList.get(undoList.getSize() - 1));
-
-            } else {
-                addSpecial(undoList.get(undoList.getSize() - 1));
-
-            }
-            addRemove.remover(addRemove.getSize() - 1);
-            undoList.remover(undoList.getSize() - 1);
-        } else {
-
-            undoList = new myDoublelyLinkedList<DVD>();
-            addRemove = new myDoublelyLinkedList<String>();
-        }
-    }
-
     public int getUndoSize (){
         return undoList.getSize();
     }
@@ -273,22 +246,62 @@ public class RentalStore extends AbstractTableModel {
         return unit.DelLeadWhiteSpace(string);
     }
 
-    public int getSelectedIndex(DVD d) {
-        return listDVDs.find(d);
+
+    @Override
+    public String getColumnName(int column) {
+        return colNames[column];
     }
 
     @Override
     public int getRowCount() {
-        return 0;
+        return listDVDs.getSize();
     }
 
     @Override
     public int getColumnCount() {
-        return 0;
+        return colNames.length;
     }
 
     @Override
-    public Object getValueAt(int rowIndex, int columnIndex) {
+    public Object getValueAt(int row, int col) {
+        if (col == 0) {
+            return listDVDs.get(row).getNameOfRenter();
+        }
+        if (col == 1) {
+            return listDVDs.get(row).getTitle();
+
+        }
+        if (col == 2) {
+            return DATE_FORMAT.format(listDVDs.get(row).getBought());
+        }
+        if (col == 3) {
+            return DATE_FORMAT.format(listDVDs.get(row).getDueBack());
+        }
+        if (col == 4) {
+            if (listDVDs.get(row) instanceof Game){
+                return ((Game) listDVDs.get(row)).getPlayer().toString();
+            } else {
+                return "DVD";
+            }
+        }
         return null;
+
+    }
+
+    public void loadDVDs(DVD[] list) {
+        listDVDs.clear();
+        for (int i = 0; i < list.length; i++) {
+            addSpecial(list[i]);
+        }
+    }
+
+    public void undo() {
+        if (undoList.getSize() > 0) {
+            loadDVDs(undoList.get( undoList.getSize() -1));
+            undoList.remover(undoList.getSize() - 1);
+        } else {
+            undoList = new myDoubleLinkedList<DVD[]>() ;
+        }
     }
 }
+

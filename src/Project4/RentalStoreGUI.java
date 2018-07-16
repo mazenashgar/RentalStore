@@ -70,15 +70,6 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
 
     private JTable table;
 
-    private Object[] colNames = {"Names", "Title", "Rented On", "Due Date", "Console"};
-
-    private SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("MM/dd/yyyy");
-
-    private final int rowCount = 50;
-    private final int colCount = 5;
-
-    private String[][] data = new String[rowCount][colCount];
-
     /******************************************************************
      * Constructor for the RentalStoreGUI that creates the menus and list area for
      * DVD and Games to be displayed.
@@ -152,16 +143,22 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
 
         // Add a rental store object to the GUI
         list = new RentalStore();
-        updateList();
 
-        table = new JTable (data , colNames){
+        table = new JTable(list){
+            private static final long serialVersionUID = 1;
+
             @Override
-            public boolean isCellEditable(int row, int column) {
+            public boolean isCellEditable(int row, int col){
                 return false;
             }
         };
+        table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+
         scrollList = new JScrollPane(table);
         add(scrollList);
+        table.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
+
+        table.setFillsViewportHeight(true);
 
         // Sets the title
         setTitle("Rental Store");
@@ -303,7 +300,6 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
             undo.setEnabled(true);
         }
 
-        updateList();
         list.update();
     }
 
@@ -471,41 +467,6 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
             // Return the method if there is a problem with how the date is
             // formatted
             return;
-        }
-    }
-
-    public void updateList() {
-
-
-        for (int row = 0; row < rowCount; row++) {
-            for (int col = 0; col < colCount; col++) {
-
-                    data[row][col] = "";
-            }
-        }
-
-
-        for (int row = 0; row < list.getSize(); row++) {
-            for (int col = 0; col < colCount; col++) {
-
-                if (col == 0)
-                    data[row][col] = list.get(row).getNameOfRenter();
-                if (col == 1)
-                    data[row][col] = list.get(row).getTitle();
-
-                if (col == 2)
-                    data[row][col] = DATE_FORMAT.format(list.get(row).getBought());
-                if (col == 3)
-                    data[row][col] = DATE_FORMAT.format(list.get(row).getDueBack());
-
-                if (col == 4) {
-                    if (list.get(row) instanceof Game) {
-                        data[row][col] = ((Game) list.get(row)).getPlayer().toString();
-                    } else {
-                        data[row][col] = "";
-                    }
-                }
-            }
         }
     }
 
