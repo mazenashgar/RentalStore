@@ -13,7 +13,7 @@ import java.util.Date;
  * rentalStoreGUI and checks that the input is valid.
  *
  * @author Mazen Ashgar and Max Carson
- * @version 6/30/2018
+ * @version 7/25/2018
  *********************************************************************/
 public class RentGameDialog  extends Dialog implements ActionListener {
 
@@ -25,7 +25,6 @@ public class RentGameDialog  extends Dialog implements ActionListener {
 
     /** Options of player types to choose from */
     private JComboBox playerOptions;
-
 
     /******************************************************************
      * A constructor for the RentGameDialog Class that creates a

@@ -13,7 +13,7 @@ import java.util.GregorianCalendar;
  * class which allows it to save serialized states.
  *
  * @author Mazen Ashgar and Max Carson
- * @version 6/30/2018
+ * @version 7/25/2018
  *********************************************************************/
 public class DVD implements Serializable {
 
@@ -41,7 +41,6 @@ public class DVD implements Serializable {
 
     /** Final double late fee for a DVD */
     private final double DVD_LATE_FEE = 2.00;
-
 
     /******************************************************************
      * Constructor for the DVD Class
@@ -230,25 +229,25 @@ public class DVD implements Serializable {
 
     /******************************************************************
      * A method that uses recursion to delete all the white space
-     * in the beginning of a string
+     * in the beginning of a str
      *
-     * @param string - a String that you want to get rid of the leading
+     * @param str - a String that you want to get rid of the leading
      * white space on
      *****************************************************************/
-    public String DelLeadWhiteSpace (String string){
+    public String DelLeadWhiteSpace (String str){
 
-        //Returns the string if the string is empty
-        if(string.equals("")){
-            return string;
+        //Returns the str if the str is empty
+        if(str.equals("")){
+            return str;
         }
 
         //Deletes all leading white space using recursion
-        if(string.charAt(0) == ' '){
-            string = DelLeadWhiteSpace(string.substring(1));
+        if(str.charAt(0) == ' '){
+            str = DelLeadWhiteSpace(str.substring(1));
         }
 
-        //Returns a string without leading white space
-        return string;
+        //Returns a str without leading white space
+        return str;
     }
 }
 

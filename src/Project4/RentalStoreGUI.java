@@ -16,7 +16,7 @@ import java.util.*;
  * inputed date.
  *
  * @author Mazen Ashgar and Max Carson
- * @version 6/30/2018
+ * @version 7/25/2018
  *********************************************************************/
 public class RentalStoreGUI extends JFrame implements ActionListener {
 
@@ -144,6 +144,7 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
         // Add a rental store object to the GUI
         list = new RentalStore();
 
+        //instantiate a JTable, allow a single selection from the user
         table = new JTable(list){
             private static final long serialVersionUID = 1;
 
@@ -154,10 +155,10 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
         };
         table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
+        //add a scrollList, add it to the GUI, Auto resize columns
         scrollList = new JScrollPane(table);
         add(scrollList);
         table.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
-
         table.setFillsViewportHeight(true);
 
         // Sets the title
@@ -173,11 +174,10 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
     }
 
     /******************************************************************
-     * Action perform menu that determines what happens when the menu items are
-     * clicked on.
+     * Action perform menu that determines what happens when the menu
+     * items are clicked on.
      *
-     * @param e
-     *            - the ActionEvent item for the menu items clicked on.
+     * @param e - the ActionEvent item for the menu items clicked on.
      *****************************************************************/
     public void actionPerformed(ActionEvent e) {
 
@@ -187,21 +187,13 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
         // If the open serialized menu was clicked on it will opens up a
         // file chooser
         if (openSerItem == comp) {
-            JFileChooser chooser = new JFileChooser();
-            int status = chooser.showOpenDialog(null);
 
-            // When the user chooses a file it saves the file name to a
-            // string
-            if (status == JFileChooser.APPROVE_OPTION) {
-                String filename = chooser.getSelectedFile().getAbsolutePath();
-
-                // This opens the user selected file
-                if (openSerItem == comp)
-                    list.loadFromSerializable(filename);
-            }
+            // This opens the user selected file
+            if (openSerItem == comp)
+                list.loadFromSerializable(fileOpener("Load"));
         }
 
-        //TODO: comment
+        //If the user clicks Undo
         if (undo == comp) {
             list.undo();
         }
@@ -209,50 +201,28 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
         // If the open text menu was clicked on it will opens up a
         // file chooser
         if (openTextItem == comp) {
-            JFileChooser chooser = new JFileChooser();
-            int status = chooser.showOpenDialog(null);
 
-            // When the user chooses a file it saves the file name to a
-            // string
-            if (status == JFileChooser.APPROVE_OPTION) {
-                String filename = chooser.getSelectedFile().getAbsolutePath();
-
-                // This opens the user selected file
-                if (openTextItem == comp)
-                    list.loadFromText(filename);
-            }
+            // This opens the user selected file
+            if (openTextItem == comp)
+                list.loadFromText(fileOpener("Load"));
         }
 
         // If the user clicks on the save serialized file menu item
         // it prompts the user to choose a location to save file
         if (saveSerItem == comp) {
-            JFileChooser chooser = new JFileChooser();
-            int status = chooser.showSaveDialog(null);
 
-            // This saves the user selected file name to a string
-            if (status == JFileChooser.APPROVE_OPTION) {
-                String filename = chooser.getSelectedFile().getAbsolutePath();
-
-                // This saves list to the user selected file
-                if (saveSerItem == e.getSource())
-                    list.saveAsSerializable(filename);
-            }
+            // This saves list to the user selected file
+            if (saveSerItem == e.getSource())
+                list.saveAsSerializable(fileOpener("Save"));
         }
 
         // If the user clicks on save text file menu item it
         // prompts the user to choose a location to save file
         if (saveTextItem == comp) {
-            JFileChooser chooser = new JFileChooser();
-            int status = chooser.showSaveDialog(null);
 
-            // This saves the user selected file name to a string
-            if (status == JFileChooser.APPROVE_OPTION) {
-                String filename = chooser.getSelectedFile().getAbsolutePath();
-
-                // This saves list to the user selected file
-                if (saveTextItem == e.getSource())
-                    list.saveAsText(filename);
-            }
+            // This saves list to the user selected file
+            if (saveTextItem == e.getSource())
+                list.saveAsText(fileOpener("Save"));
         }
 
         // If the user selects exits, the program exits
@@ -303,9 +273,33 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
         list.update();
     }
 
+    private String fileOpener (String str){
+
+        JFileChooser chooser = new JFileChooser();
+
+        int status;
+        String filename = "";
+
+        //The dialog depends on what the user is trying to do
+        if(str.equals("Save")){
+            status = chooser.showSaveDialog(null);
+        }else{
+            status = chooser.showOpenDialog(null);
+        }
+
+        // This saves the user selected file name to a string
+        if (status == JFileChooser.APPROVE_OPTION) {
+            filename = chooser.getSelectedFile().getAbsolutePath();
+        }
+
+        //return the name of the file selected
+        return filename;
+    }
+
     /******************************************************************
-     * A method that Finds out if lists items are late on a user inputted date and
-     * displays how late the DVD items and game items are on that date.
+     * A method that Finds out if lists items are late on a user
+     * inputted date and displays how late the DVD items and game
+     * items are on that date.
      *****************************************************************/
     private void lateUnits() {
 
@@ -371,9 +365,10 @@ public class RentalStoreGUI extends JFrame implements ActionListener {
     }
 
     /******************************************************************
-     * A Method that allows users to return a DVD or game. It accepts rentals as
-     * long as the date returned is acceptable. It then displays the final cost of
-     * the rental. With a late fee added if the return date is after the due date.
+     * A Method that allows users to return a DVD or game. It accepts
+     * rentals as long as the date returned is acceptable. It then
+     * displays the final cost of the rental. With a late fee added
+     * if the return date is after the due date.
      *****************************************************************/
     private void returnUnit() {
 

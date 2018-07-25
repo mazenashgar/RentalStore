@@ -14,13 +14,12 @@ import java.util.Date;
  * rentalStoreGUI and checks that the input is valid.
  *
  * @author Mazen Ashgar and Max Carson
- * @version 6/30/2018
+ * @version 7/25/2018
  *********************************************************************/
 public class RentDVDDialog extends Dialog implements ActionListener {
 
     /** Declares a DVD object*/
     private DVD unit;
-
 
     /******************************************************************
      * A constructor for the RentDVDDialog Class that creates a display
